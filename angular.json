@@ -27,12 +27,32 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/verticaTheme/vendor/bootstrap/css/bootstrap.min.css",
+              "src/verticaTheme/vendor/font-awesome/css/font-awesome.min.css",
+              "src/verticaTheme/vendor/nivo-lightbox/nivo-lightbox.css",
+              "src/verticaTheme/vendor/nivo-lightbox/themes/default/default.css",
+              "src/verticaTheme/vendor/animate.css",
+              "src/verticaTheme/css/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/verticaTheme/vendor/jquery-1.11.1.min.js",
+              "src/verticaTheme/vendor/bootstrap/js/bootstrap.min.js",
+              "src/verticaTheme/vendor/jquery.easing.min.js",
+              "src/verticaTheme/vendor/jquery.mousewheel.min.js",
+              "src/verticaTheme/vendor/jquery.nicescroll.min.js",
+              "src/verticaTheme/vendor/jquery.nicescroll.plus.js",
+              "src/verticaTheme/vendor/waypoints.min.js",
+              "src/verticaTheme/vendor/nivo-lightbox/nivo-lightbox.min.js",
+              "src/verticaTheme/vendor/jquery.bxslider.min.js",
+              "src/verticaTheme/vendor/jquery.validate.min.js",
+              "src/verticaTheme/vendor/placeholders.jquery.min.js",
+              "src/verticaTheme/vendor/cross-browser.js",
+              "src/verticaTheme/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
