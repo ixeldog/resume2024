@@ -6,12 +6,12 @@
     <!-- /Margin Collums -->
     <!-- Item Content -->
     <div class="col-md-8 content-wrap bg1">
-        <div class="line-content">
+        <div class="line-content" [ngClass]="{'line-content-education': AddExtraVerticalSpace}">
         <!-- Subtitle -->
         <h3 class="section-item-title-1">{{Subtitle}}</h3>
         <!-- /Subtitle -->
         <!-- content -->
-        <p>{{Content}}</p>
+        <ng-content></ng-content>
         <!-- /Content -->
         </div>
     </div>

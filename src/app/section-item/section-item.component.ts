@@ -13,14 +13,14 @@ export class SectionItemComponent {
   TimelineClassType:string;
 
   @Input()
-  Subtitle:String;
+  AddExtraVerticalSpace:boolean;
 
   @Input()
-  Content:string;
+  Subtitle:String;
 
   constructor() {
     this.TimelineClassType = "";
     this.Subtitle = "";
-    this.Content = "";
+    this.AddExtraVerticalSpace = false;
   }
 }

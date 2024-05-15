@@ -145,39 +145,25 @@
 
             <app-section-title [Title]="'Profile'"></app-section-title>
 
-            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Full Name'" [Content]="'Joe Godleski'"></app-section-item>
+            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Full Name'">
+              <p>Joe Godleski</p>
+            </app-section-item>
 
-            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Born'" [Content]="'30 Aug 1991 - Austin, U.S.A'"></app-section-item>
+            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Born'">
+              <p>30 Aug 1991 - Austin, U.S.A</p>
+            </app-section-item>
 
-            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Email'" [Content]="'ixeldog&#64;gmail.com'"></app-section-item>
+            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Email'">
+              <p>ixeldog&#64;gmail.com</p>
+            </app-section-item>
 
-            <!-- SECTION ITEM -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <div class="line-content">
-                  <!-- Subtitle -->
-                  <h3 class="section-item-title-1">Find Me On</h3>
-                  <!-- /Subtitle -->
-                  <!-- content -->
-                  <a href="#" class="btn btn-default"><i class="fa fa-facebook"></i></a> 
-                  <a href="#" class="btn btn-default"><i class="fa fa-twitter"></i></a>
-                  <a href="#" class="btn btn-default"><i class="fa fa-linkedin"></i></a>
-                  <a href="#" class="btn btn-default"><i class="fa fa-link"></i></a>
-                  <a href="#" class="btn btn-default"><i class="fa fa-paper-plane-o"></i></a>
-                  <!-- /Content -->
-                </div>
-              </div>
-              <!-- /Item Content -->
-              <!-- Margin Collum -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!-- /Margin Collum -->
-            </div>
-            <!-- /SECTION ITEM --> 
+            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Find Me On'">
+              <a href="#" class="btn btn-default"><i class="fa fa-facebook"></i></a> 
+              <a href="#" class="btn btn-default"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="btn btn-default"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="btn btn-default"><i class="fa fa-link"></i></a>
+              <a href="#" class="btn btn-default"><i class="fa fa-paper-plane-o"></i></a>
+            </app-section-item>
             
           </section>
           <!-- ==>> /SECTION: PROFILE INFOS -->    
@@ -191,93 +177,27 @@
             <app-timeline-vertical-margin></app-timeline-vertical-margin>
 
             <app-section-title [Title]="'Education'"></app-section-title>
-
-            <!-- SECTION ITEM -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education "></div>
-              <!-- /Margin Collums -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <div class="line-content line-content-education">
-                  <!-- Graduation title -->
-                  <h3 class="section-item-title-1">GRAPHIC DESIGN</h3>
-                  <!-- /Graduation title -->
-                  <!-- Graduation time -->
-                  <h4 class="graduation-time"><i class="fa fa-university"></i> St. Patrick University (2 Years Course) - <span class="graduation-date">Graduation May 2013</span></h4>
-                  <!-- /Graduation time -->
-                  <!-- content -->
-                  <div class="graduation-description">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                  <!-- /Content -->
-                </div>
+            
+            <app-section-item [TimelineClassType]="'timeline-education'" [AddExtraVerticalSpace]="true" [Subtitle]="'GRAPHIC DESIGN'">
+              <h4 class="graduation-time"><i class="fa fa-university"></i> St. Patrick University (2 Years Course) - <span class="graduation-date">Graduation May 2013</span></h4>
+              <div class="graduation-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
-              <!-- /Item Content -->
-              <!-- Margin Collum -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!-- /Margin Collum -->
-            </div>
-            <!-- /SECTION ITEM -->   
+            </app-section-item>  
 
-            <!-- SECTION ITEM -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education "></div>
-              <!-- /Margin Collums -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <div class="line-content line-content-education">
-                  <!-- Graduation title -->
-                  <h3 class="section-item-title-1">MASTER OF WEB DESIGN</h3>
-                  <!-- /Graduation title <-->
-                  <!-- Graduation time -->
-                  <h4 class="graduation-time"><i class="fa fa-university"></i> St. Patrick University (2 Years Course) - <span class="graduation-date">Graduation May 2013</span></h4>
-                  <!-- /Graduation time -->
-                  <!-- content -->
-                  <div class="graduation-description">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                  <!-- /Content -->
-                </div>
+            <app-section-item [TimelineClassType]="'timeline-education'" [AddExtraVerticalSpace]="true" [Subtitle]="'MASTER OF WEB DESIGN'">
+              <h4 class="graduation-time"><i class="fa fa-university"></i> St. Patrick University (2 Years Course) - <span class="graduation-date">Graduation May 2013</span></h4>
+              <div class="graduation-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
-              <!--/Item Content -->
-              <!-- Margin Collum-->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!-- /Margin Collum-->
-            </div>
-            <!-- /SECTION ITEM -->   
+            </app-section-item>
 
-             <!-- SECTION ITEM -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education "></div>
-              <!-- /Margin Collums -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <div class="line-content line-content-education">
-                  <!-- Graduation title -->
-                  <h3 class="section-item-title-1">GRAPHIC DESIGN</h3>
-                  <!-- /Graduation title -->
-                  <!-- Graduation time -->
-                  <h4 class="graduation-time"><i class="fa fa-university"></i> St. Patrick University (2 Years Course) - <span class="graduation-date">Graduation May 2013</span></h4>
-                  <!-- /Graduation time -->
-                  <!-- content -->
-                  <div class="graduation-description">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                  <!-- /Content -->
-                </div>
+            <app-section-item [TimelineClassType]="'timeline-education'" [AddExtraVerticalSpace]="true" [Subtitle]="'GRAPHIC DESIGN'">
+              <h4 class="graduation-time"><i class="fa fa-university"></i> St. Patrick University (2 Years Course) - <span class="graduation-date">Graduation May 2013</span></h4>
+              <div class="graduation-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
-              <!-- /Item Content -->
-              <!-- Margin Collum-->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!-- /Margin Collum-->
-            </div>
-            <!-- /SECTION ITEM -->       
+            </app-section-item>   
           </section>
           <!-- ==>> /SECTION: EDUCATION <<==== -->  
 
@@ -291,121 +211,33 @@
 
             <app-section-title [Title]="'Work Experience'"></app-section-title>
 
-            <!-- SECTION ITEM -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
-              <!-- /Margin Collums -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <div class="line-content line-content-education">
-                  <!-- Work Place -->
-                  <h3 class="section-item-title-1">Black Tie Corp</h3>
-                  <!-- /work place -->
-                  <!-- Graduation time -->
-                  <h4 class="job"><i class="fa fa-flag"></i> Web Designer - <span class="job-date">June 2012 - Current</span></h4>
-                  <!-- /Graduation time -->
-                  <!-- content -->
-                  <div class="job-description">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                  <!-- /Content -->
-                </div>
+            <app-section-item [TimelineClassType]="'timeline-work'" [AddExtraVerticalSpace]="true" [Subtitle]="'Black Tie Corp'">
+              <h4 class="job"><i class="fa fa-flag"></i> Web Designer - <span class="job-date">June 2012 - Current</span></h4>
+              <div class="job-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
-              <!-- /Item Content -->
-              <!-- Margin Collum-->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!-- /Margin Collum-->
-            </div>
-            <!-- /SECTION ITEM -->
+            </app-section-item>
+            
+            <app-section-item [TimelineClassType]="'timeline-work'" [AddExtraVerticalSpace]="true" [Subtitle]="'Oasis Ltda.'">
+              <h4 class="job"><i class="fa fa-flag"></i> Front-end Developer - <span class="job-date">Jan 2010 - Apr 2012</span></h4>
+              <div class="job-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </app-section-item>
 
-            <!-- SECTION ITEM -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
-              <!-- /Margin Collums -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <div class="line-content line-content-education">
-                  <!-- Work Place -->
-                  <h3 class="section-item-title-1">Oasis Ltda.</h3>
-                  <!-- /work place -->
-                  <!-- Graduation time -->
-                  <h4 class="job"><i class="fa fa-flag"></i> Front-end Developer - <span class="job-date">Jan 2010 - Apr 2012</span></h4>
-                  <!-- /Graduation time -->
-                  <!-- content -->
-                  <div class="job-description">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                  <!-- /Content -->
-                </div>
+            <app-section-item [TimelineClassType]="'timeline-work'" [AddExtraVerticalSpace]="true" [Subtitle]="'Dupstudio'">
+              <h4 class="job"><i class="fa fa-flag"></i> Designer - <span class="job-date">Jan 2010 - Apr 2012</span></h4>
+              <div class="job-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
-              <!-- /Item Content -->
-              <!-- Margin Collum-->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!-- /Margin Collum-->
-            </div>
-            <!-- /SECTION ITEM -->  
+            </app-section-item>
 
-            <!-- SECTION ITEM -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
-              <!-- /Margin Collums -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <div class="line-content line-content-education">
-                  <!-- Work Place -->
-                  <h3 class="section-item-title-1">Dupstudio</h3>
-                  <!-- /work place -->
-                  <!-- Graduation time -->
-                  <h4 class="job"><i class="fa fa-flag"></i> Designer - <span class="job-date">Jan 2010 - Apr 2012</span></h4>
-                  <!-- /Graduation time -->
-                  <!-- content -->
-                  <div class="job-description">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                  <!-- /Content -->
-                </div>
+            <app-section-item [TimelineClassType]="'timeline-work'" [AddExtraVerticalSpace]="true" [Subtitle]="'Dotrex Co.'">
+              <h4 class="job"><i class="fa fa-flag"></i> Designer - <span class="job-date">Jan 2010 - Apr 2012</span></h4>
+              <div class="job-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
-              <!-- /Item Content -->
-              <!-- Margin Collum-->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!-- /Margin Collum-->
-            </div>
-            <!-- /SECTION ITEM -->  
-
-            <!-- SECTION ITEM -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
-              <!-- /Margin Collums -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <div class="line-content line-content-education">
-                  <!-- Work Place -->
-                  <h3 class="section-item-title-1">Dotrex Co.</h3>
-                  <!-- /work place -->
-                  <!-- Graduation time -->
-                  <h4 class="job"><i class="fa fa-flag"></i> Designer - <span class="job-date">Jan 2010 - Apr 2012</span></h4>
-                  <!-- /Graduation time -->
-                  <!-- content -->
-                  <div class="job-description">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                  <!-- /Content -->
-                </div>
-              </div>
-              <!-- /Item Content -->
-              <!-- Margin Collum-->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!-- /Margin Collum-->
-            </div>
-            <!-- /SECTION ITEM -->  
+            </app-section-item>
           </section>
           <!-- ==>> /SECTION: WORK EXPERIENCE <<==== --> 
 
@@ -605,77 +437,18 @@
 
             <app-section-title [Title]="'Interests'"></app-section-title>
 
-            <!-- SECTION ITEM -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
-              <!-- /Margin Collums -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <div class="line-content">
-                  <!-- Subtitle -->
-                  <h3 class="section-item-title-1">Art</h3>
-                  <!-- /Subtitle -->
-                  <!-- content -->
-                  <p>Praesent tellus ligula, tincidunt et fringilla vel, tincidunt ut dui. Nulla feugiat, lacus ac malesuada lobortis, elit nunc congue nunc, vel imperdiet lorem leo a lectus.</p>
-                  <!-- /Content -->
-                </div>
-              </div>
-              <!-- /Item Content -->
-              <!-- Margin Collum-->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!-- /Margin Collum-->
-            </div>
-            <!-- /SECTION ITEM -->
+            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Art'">
+              <p>Praesent tellus ligula, tincidunt et fringilla vel, tincidunt ut dui. Nulla feugiat, lacus ac malesuada lobortis, elit nunc congue nunc, vel imperdiet lorem leo a lectus.</p>
+            </app-section-item>
             
-            <!-- SECTION ITEM -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
-              <!-- /Margin Collums -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <div class="line-content">
-                  <!-- Subtitle -->
-                  <h3 class="section-item-title-1">Games</h3>
-                  <!-- /Subtitle -->
-                  <!-- content -->
-                  <p>Praesent tellus ligula, tincidunt et fringilla vel, tincidunt ut dui. Nulla feugiat, lacus ac malesuada lobortis, elit nunc congue nunc, vel imperdiet lorem leo a lectus.</p>
-                  <!-- /Content -->
-                </div>
-              </div>
-              <!-- /Item Content -->
-              <!-- Margin Collum-->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!-- /Margin Collum-->
-            </div>
-            <!-- /SECTION ITEM -->   
+            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Games'">
+              <p>Praesent tellus ligula, tincidunt et fringilla vel, tincidunt ut dui. Nulla feugiat, lacus ac malesuada lobortis, elit nunc congue nunc, vel imperdiet lorem leo a lectus.</p>
+            </app-section-item>
 
-            <!-- SECTION ITEM -->
-            <div class="line row">
-              <!-- Margin Collums (necessary for the timeline effect) -->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
-              <!-- /Margin Collums -->
-              <!-- Item Content -->
-              <div class="col-md-8 content-wrap bg1">
-                <div class="line-content">
-                  <!-- Subtitle -->
-                  <h3 class="section-item-title-1">Books</h3>
-                  <!-- /Subtitle -->
-                  <!-- content -->
-                  <p>Praesent tellus ligula, tincidunt et fringilla vel, tincidunt ut dui. Nulla feugiat, lacus ac malesuada lobortis, elit nunc congue nunc, vel imperdiet lorem leo a lectus.</p>
-                  <!-- /Content -->
-                </div>
-              </div>
-              <!-- /Item Content -->
-              <!-- Margin Collum-->
-              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-              <!-- /Margin Collum-->
-            </div>
-            <!-- /SECTION ITEM --> 
+            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Books'">
+              <p>Praesent tellus ligula, tincidunt et fringilla vel, tincidunt ut dui. Nulla feugiat, lacus ac malesuada lobortis, elit nunc congue nunc, vel imperdiet lorem leo a lectus.</p>
+            </app-section-item>
+
           </section>
           <!-- ==>> /SECTION: INTERESTS -->
 
