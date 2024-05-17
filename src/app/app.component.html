@@ -252,69 +252,15 @@
             <app-section-title [Title]="'Skills'"></app-section-title>
 
             <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Professional Skills'">
-              <!-- content -->
-              <ul class="skills-list">
-                <!-- item-list -->
-                <li>
-                  <app-skill-progress-bar [Percent]="70" [Label]="'Communication'"></app-skill-progress-bar>
-                </li>
-                <!-- /item list -->
-                <!-- item-list -->
-                <li>
-                  <app-skill-progress-bar [Percent]="90" [Label]="'Leadership'" [ColorClass]="'progress-bar-2'"></app-skill-progress-bar>
-                </li>
-                <!-- /item list -->
-                <!-- item-list -->
-                <li>
-                  <app-skill-progress-bar [Percent]="85" [Label]="'Confidence'" [ColorClass]="'progress-bar-3'"></app-skill-progress-bar>
-                </li>
-                <!-- /item list -->
-              </ul>
-              <!-- /Content -->
+              <app-skill-group [Skills]="[Skills[0], Skills[1], Skills[2]]"></app-skill-group>
             </app-section-item>
 
             <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Software Skills'">
-              <!-- content -->
-              <ul class="skills-list">
-                <!-- item-list -->
-                <li>
-                  <app-skill-progress-bar [Percent]="85" [Label]="'Adobe Photoshop'"></app-skill-progress-bar>
-                </li>
-                <!-- /item list -->
-                <!-- item-list -->
-                <li>
-                  <app-skill-progress-bar [Percent]="90" [Label]="'Adobe Illustrator'" [ColorClass]="'progress-bar-2'"></app-skill-progress-bar>
-                </li>
-                <!-- /item list -->
-                <!-- item-list -->
-                <li>
-                  <app-skill-progress-bar [Percent]="40" [Label]="'Adobe Fireworks'" [ColorClass]="'progress-bar-3'"></app-skill-progress-bar>
-                </li>
-                <!-- /item list -->
-              </ul>
-              <!-- /Content -->
+              <app-skill-group [Skills]="[Skills[3], Skills[4], Skills[5]]"></app-skill-group>
             </app-section-item>
 
             <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Code Skills'">
-              <!-- content -->
-              <ul class="skills-list">
-                <!-- item-list -->
-                <li>
-                  <app-skill-progress-bar [Percent]="90" [Label]="'HTML5 / CSS3'"></app-skill-progress-bar>
-                </li>
-                <!-- /item list -->
-                <!-- item-list -->
-                <li>
-                  <app-skill-progress-bar [Percent]="60" [Label]="'Javascript'" [ColorClass]="'progress-bar-2'"></app-skill-progress-bar>
-                </li>
-                <!-- /item list -->
-                <!-- item-list -->
-                <li>
-                  <app-skill-progress-bar [Percent]="40" [Label]="'PHP'" [ColorClass]="'progress-bar-3'"></app-skill-progress-bar>
-                </li>
-                <!-- /item list -->
-              </ul>
-              <!-- /Content -->
+              <app-skill-group [Skills]="[Skills[6], Skills[7], Skills[8]]"></app-skill-group>
             </app-section-item>
 
           </section>

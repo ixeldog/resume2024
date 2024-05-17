@@ -1,7 +1,7 @@
 <div class="progress">
-    <div class="progress-bar {{ColorClass}}" role="progressbar" [attr.data-percent]="Percent + '%'" style="width: {{Percent}}%;">
-        <span class="sr-only">{{Percent}}% Complete</span>
+    <div class="progress-bar {{ColorClass}}" role="progressbar" [attr.data-percent]="Skill.Percent + '%'" style="width: {{Skill.Percent}}%;">
+        <span class="sr-only">{{Skill.Percent}}% Complete</span>
     </div>
-    <span class="progress-type">{{Label}}</span>
-    <span class="progress-completed">{{Percent}}%</span>
+    <span class="progress-type">{{Skill.Label}}</span>
+    <span class="progress-completed">{{Skill.Percent}}%</span>
   </div>

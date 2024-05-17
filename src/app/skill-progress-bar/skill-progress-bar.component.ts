@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Skill } from '../skill';
 
 @Component({
   selector: 'app-skill-progress-bar',
@@ -9,22 +10,15 @@ import { CommonModule } from '@angular/common';
   styleUrl: './skill-progress-bar.component.scss'
 })
 export class SkillProgressBarComponent {
-  @Input()
-  Percent:number;
 
   @Input()
-  Label:string;
+  Skill:Skill;
 
   @Input()
   ColorClass:string;
 
   constructor() {
-    this.Percent = 0;
-    this.Label = "";
+    this.Skill = new Skill();
     this.ColorClass = "";
-  }
-
-  get PercentString(): string {
-    return this.Label + "%";
   }
 }

@@ -1,0 +1,5 @@
+<ul class="skills-list">
+    <li *ngFor="let skill of Skills; index as i;">
+        <app-skill-progress-bar [Skill]="Skills[i]" [ColorClass]="'progress-bar-' + (i + 1)"></app-skill-progress-bar>
+    </li>
+  </ul>
