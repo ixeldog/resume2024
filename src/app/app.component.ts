@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router'; 
 import { SectionItemComponent } from './section-item/section-item.component';
 import { SectionTitleComponent } from './section-title/section-title.component';
 import { TimelineVerticalMarginComponent } from './timeline-vertical-margin/timeline-vertical-margin.component';
 import { SkillGroupComponent } from './skill-group/skill-group.component';
 import { Skill } from './skill';
+import { SkillsService } from './skills.service';
 
 @Component({
   selector: 'app-root',
@@ -19,18 +20,19 @@ import { Skill } from './skill';
 })
 export class AppComponent {
   title = 'resume2024';
+  SkillsService:SkillsService;
+  Skills:Skill[];
 
-  Skills:Skill[] = [
-    {'Percent': 70, 'Label':'Communication'},
-    {'Percent': 90, 'Label':'Leadership'},
-    {'Percent': 85, 'Label':'Confidence'},
+  constructor() {
+    this.SkillsService = new SkillsService();
+    this.Skills = [];
+  }
 
-    {'Percent': 85, 'Label':'Adobe Photoshop'},
-    {'Percent': 90, 'Label':'Adobe Illustrator'},
-    {'Percent': 40, 'Label':'Adobe Fireworks'},
+  ngOnInit() {
+    this.SkillsService.getSkillsAsync()
+      .then((skills:Skill[]) => {
+        this.Skills = skills;
+      })
+  }
 
-    {'Percent': 90, 'Label':'HTML5 / CSS3'},
-    {'Percent': 60, 'Label':'Javascript'},
-    {'Percent': 40, 'Label':'PHP'},
-  ];
 }
