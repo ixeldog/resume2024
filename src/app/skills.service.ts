@@ -1,32 +1,45 @@
 import { Injectable } from '@angular/core';
-import { Skill } from './skill';
+import { SkillGroup } from './models/skill-group';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillsService {
 
-  Skills:Skill[] = [
-    {'Percent': 70, 'Label':'Communication'},
-    {'Percent': 90, 'Label':'Leadership'},
-    {'Percent': 85, 'Label':'Confidence'},
-
-    {'Percent': 85, 'Label':'Adobe Photoshop'},
-    {'Percent': 90, 'Label':'Adobe Illustrator'},
-    {'Percent': 40, 'Label':'Adobe Fireworks'},
-
-    {'Percent': 90, 'Label':'HTML5 / CSS3'},
-    {'Percent': 60, 'Label':'Javascript'},
-    {'Percent': 40, 'Label':'PHP'},
+  SkillGroups:SkillGroup[] = [
+    {
+      GroupLabel: "Professional Skills",
+      Skills: [
+        {'Percent': 70, 'Label':'Communication'},
+        {'Percent': 90, 'Label':'Leadership'},
+        {'Percent': 85, 'Label':'Confidence'},
+      ]
+    },
+    {
+      GroupLabel: "Software Skills",
+      Skills: [
+        {'Percent': 85, 'Label':'Adobe Photoshop'},
+        {'Percent': 90, 'Label':'Adobe Illustrator'},
+        {'Percent': 40, 'Label':'Adobe Fireworks'},
+      ]
+    },
+    {
+      GroupLabel: "Code Skills",
+      Skills: [
+        {'Percent': 90, 'Label':'HTML5 / CSS3'},
+        {'Percent': 60, 'Label':'Javascript'},
+        {'Percent': 40, 'Label':'PHP'},
+      ]
+    }
   ];
 
   constructor() { }
 
-  getSkillsAsync():Promise<Skill[]> {
+  getSkillsAsync():Promise<SkillGroup[]> {
     return new Promise((resolve) => {
       //simulate load time for a call to server to get data
       setTimeout(() => {
-        resolve(this.Skills);
+        resolve(this.SkillGroups);
       }, 3000)
     });
   }

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Skill } from '../skill';
+import { Skill } from '../models/skill';
 
 @Component({
   selector: 'app-skill-progress-bar',

@@ -7,7 +7,7 @@ import { SectionItemComponent } from './section-item/section-item.component';
 import { SectionTitleComponent } from './section-title/section-title.component';
 import { TimelineVerticalMarginComponent } from './timeline-vertical-margin/timeline-vertical-margin.component';
 import { SkillGroupComponent } from './skill-group/skill-group.component';
-import { Skill } from './skill';
+import { SkillGroup } from './models/skill-group';
 import { SkillsService } from './skills.service';
 
 import $ from 'jquery';
@@ -52,17 +52,17 @@ import $ from 'jquery';
 export class AppComponent {
   title = 'resume2024';
   SkillsService:SkillsService;
-  Skills:Skill[];
+  SkillGroups:SkillGroup[];
 
   constructor() {
     this.SkillsService = new SkillsService();
-    this.Skills = [];
+    this.SkillGroups = [];
   }
 
   ngOnInit() {
     this.SkillsService.getSkillsAsync()
-      .then((skills:Skill[]) => {
-        this.Skills = skills;
+      .then((skills:SkillGroup[]) => {
+        this.SkillGroups = skills;
         setTimeout(() => {
           this.heightFix();
         }, 0)

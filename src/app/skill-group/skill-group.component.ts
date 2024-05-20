@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SkillProgressBarComponent } from '../skill-progress-bar/skill-progress-bar.component';
-import { Skill } from '../skill';
+import { Skill } from '../models/skill';
 
 @Component({
   selector: 'app-skill-group',
