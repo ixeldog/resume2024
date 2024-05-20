@@ -24,7 +24,10 @@ export class SkillsService {
 
   getSkillsAsync():Promise<Skill[]> {
     return new Promise((resolve) => {
-      resolve(this.Skills);
+      //simulate load time for a call to server to get data
+      setTimeout(() => {
+        resolve(this.Skills);
+      }, 3000)
     });
   }
 }

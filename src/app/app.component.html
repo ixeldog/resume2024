@@ -251,15 +251,15 @@
 
             <app-section-title [Title]="'Skills'"></app-section-title>
 
-            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Professional Skills'">
+            <app-section-item *ngIf="Skills.length > 0" [@inOutAnimation] [TimelineClassType]="'timeline-point'" [Subtitle]="'Professional Skills'">
               <app-skill-group [Skills]="[Skills[0], Skills[1], Skills[2]]"></app-skill-group>
             </app-section-item>
 
-            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Software Skills'">
+            <app-section-item *ngIf="Skills.length > 0" [@inOutAnimation] [TimelineClassType]="'timeline-point'" [Subtitle]="'Software Skills'">
               <app-skill-group [Skills]="[Skills[3], Skills[4], Skills[5]]"></app-skill-group>
             </app-section-item>
 
-            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Code Skills'">
+            <app-section-item *ngIf="Skills.length > 0" [@inOutAnimation] [TimelineClassType]="'timeline-point'" [Subtitle]="'Code Skills'">
               <app-skill-group [Skills]="[Skills[6], Skills[7], Skills[8]]"></app-skill-group>
             </app-section-item>
 
