@@ -538,6 +538,7 @@ p {
 }
 .timeline-progress {
   background: url('../img/timeline-bg.png') repeat-x center center fixed #249991;
+  background-position-y: 0%; /* Edge fix */
   position: relative;
 }
 .timeline-progress:before {
