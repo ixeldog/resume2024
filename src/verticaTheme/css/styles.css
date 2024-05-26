@@ -489,7 +489,9 @@ p {
 }
 @media (min-width:992px) {
   .profile-intro {
-    height: 245px;
+    height: auto;
+    display: flex;
+		align-items: center;
   }
 }
 .profile-pic {
