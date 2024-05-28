@@ -51,10 +51,14 @@ import $ from 'jquery';
 })
 export class AppComponent {
   title = 'resume2024';
+
+  JobTitle:string;
+
   SkillsService:SkillsService;
   SkillGroups:SkillGroup[];
 
   constructor() {
+    this.JobTitle = "Full-Stack Developer";
     this.SkillsService = new SkillsService();
     this.SkillGroups = [];
   }
@@ -71,7 +75,6 @@ export class AppComponent {
 
   //code copied from main.js. Has to be rerun after data is loaded and Sections are shown
   heightFix():void {
-    console.warn("heightfix");
     $( ".full-height" ).each(function(i, e) {
       var $stretch = $(e);
       $stretch.css({ height: $stretch.closest('.line').find('.content-wrap').outerHeight() });
