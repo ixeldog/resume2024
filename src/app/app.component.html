@@ -10,11 +10,11 @@
     <div class="tp-loader spinner"></div>
     <!-- Edit With Your Name -->
     <div class="side-menu-name">
-      John <strong>Rex</strong>
+      Joe <strong>Godleski</strong>
     </div>
     <!-- /Edit With Your Name -->
     <!-- Edit With Your Job -->
-    <p class="side-menu-job">Designer / Web Developer</p>
+    <p class="side-menu-job">{{JobTitle}}</p>
     <!-- /Edit With Your Job -->
   </div>   
 </div>
@@ -37,7 +37,7 @@
   <!-- Menu header -->
   <div class="side-menu-name">
     <!-- edit with your name -->
-    John <strong>Rex</strong>
+    Joe <strong>Godleski</strong>
     <!-- /edit with your name -->
   </div>
   <!-- edit with your Job -->
@@ -62,7 +62,6 @@
   <!-- Other Buttons -->
   <div class="side-menu-buttons">
     <a href="#" class="btn btn-side-menu"><i class="fa fa-download"></i> Download my resume</a>
-    <a href="#" class="btn btn-side-menu"><i class="fa fa-envelope-o"></i> Send me a message</a>
   </div>
   <!-- /Other Buttons-->
 </div>
@@ -95,9 +94,6 @@
           <!-- Download Resume Button -->
           <a href="#" class="btn btn-default btn-top-resume"><i class="fa fa-download"></i><span class="btn-hide-text">Download my resume</span></a>
           <!-- /Download Resume Button -->
-          <!-- Mail Button -->
-          <a href="#" class="btn btn-default btn-top-message"><i class="fa fa-envelope-o"></i><span class="btn-hide-text">Send me a message</span></a>
-          <!-- /Mail Button -->
         </div>
       </div>
       <!-- /Header Buttons -->
@@ -121,13 +117,13 @@
         <!-- Right Columm -->
         <div class="col-md-7">
           <!-- Welcome Title-->
-          <h1 class="intro-title1">Hi, i'm <span class="color1 bold">John Rex!</span></h1>
+          <h1 class="intro-title1">Hi, i'm <span class="color1 bold" style="word-break: keep-all; white-space: nowrap;">Joe Godleski</span></h1>
           <!-- /Welcome Title -->
           <!-- Job - -->
           <h2 class="intro-title2">{{JobTitle}}</h2>
           <!-- /job -->
           <!-- Description -->
-          <p><strong>Turpis, sit amet iaculis dui consectetur at.</strong> Cras sagittis molestie orci. <strong>Suspendisse ut laoreet mi</strong>. Phasellus eu tortor vehicula, blandit enim eu, auctor massa. Nulla ultricies tortor dolor, sit amet suscipit enim <strong>condimentum id</strong>. Etiam eget iaculis tellus.  Varius sit amet.</p>
+          <p>I'm a full-stack <strong>web application</strong> developer, loosely located in Atlanta, Georgia, with 15 years of experience. I'm looking for a <strong>fully remote senior level</strong> position that is a mix of frontend and backend, with ideally more frontend work than backend.</p>
           <!-- /Description -->
         </div>
         <!-- /Right Collum -->
@@ -149,8 +145,8 @@
               <p>Joe Godleski</p>
             </app-section-item>
 
-            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Born'">
-              <p>30 Aug 1991 - Austin, U.S.A</p>
+            <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Location'">
+              <p>Atlanta, Georgia</p>
             </app-section-item>
 
             <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Email'">
@@ -171,75 +167,80 @@
           
 
 
-          <!-- ====>> SECTION: EDUCATION <<====-->
-          <section class="timeline education" id="education">
-
-            <app-timeline-vertical-margin></app-timeline-vertical-margin>
-
-            <app-section-title [Title]="'Education'"></app-section-title>
-            
-            <app-section-item [TimelineClassType]="'timeline-education'" [AddExtraVerticalSpace]="true" [Subtitle]="'GRAPHIC DESIGN'">
-              <h4 class="graduation-time"><i class="fa fa-university"></i> St. Patrick University (2 Years Course) - <span class="graduation-date">Graduation May 2013</span></h4>
-              <div class="graduation-description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </app-section-item>  
-
-            <app-section-item [TimelineClassType]="'timeline-education'" [AddExtraVerticalSpace]="true" [Subtitle]="'MASTER OF WEB DESIGN'">
-              <h4 class="graduation-time"><i class="fa fa-university"></i> St. Patrick University (2 Years Course) - <span class="graduation-date">Graduation May 2013</span></h4>
-              <div class="graduation-description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </app-section-item>
-
-            <app-section-item [TimelineClassType]="'timeline-education'" [AddExtraVerticalSpace]="true" [Subtitle]="'GRAPHIC DESIGN'">
-              <h4 class="graduation-time"><i class="fa fa-university"></i> St. Patrick University (2 Years Course) - <span class="graduation-date">Graduation May 2013</span></h4>
-              <div class="graduation-description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </app-section-item>   
-          </section>
-          <!-- ==>> /SECTION: EDUCATION <<==== -->  
-
-
-
-
-          <!-- ====>> SECTION: WORK EXPERIENCE <<====-->
+          <!-- ====>> SECTION: Experience <<====-->
           <section class="timeline work-experience" id="works">
 
             <app-timeline-vertical-margin></app-timeline-vertical-margin>
 
-            <app-section-title [Title]="'Work Experience'"></app-section-title>
-
-            <app-section-item [TimelineClassType]="'timeline-work'" [AddExtraVerticalSpace]="true" [Subtitle]="'Black Tie Corp'">
-              <h4 class="job"><i class="fa fa-flag"></i> Web Designer - <span class="job-date">June 2012 - Current</span></h4>
-              <div class="job-description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </app-section-item>
+            <app-section-title [Title]="'Experience'"></app-section-title>
             
-            <app-section-item [TimelineClassType]="'timeline-work'" [AddExtraVerticalSpace]="true" [Subtitle]="'Oasis Ltda.'">
-              <h4 class="job"><i class="fa fa-flag"></i> Front-end Developer - <span class="job-date">Jan 2010 - Apr 2012</span></h4>
+            <!-- FieldEdge -->
+            <app-section-item [TimelineClassType]="'timeline-work'" [AddExtraVerticalSpace]="true" [Subtitle]="'FieldEdge'">
+              <h4 class="job"><i class="fa fa-flag"></i> FieldEdge Web - <span class="job-date">Aug 2017 - Current</span></h4>
               <div class="job-description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Maintaining and enhancing web application originally written using C#, ASP .NET and Knockout javascript framework, but is being migrated to Vue 2.</p>
+              </div>
+
+              <div style="padding: 4px 0px;"></div>
+
+              <h4 class="job"><i class="fa fa-flag"></i> Consumer Management Portal - <span class="job-date">Mar 2023 - Dec 2023</span></h4>
+              <div class="job-description">
+                <p>Replacement for existing Consumer Portal. Web application which allows our Member's Customers to login, view Invoices and Quote, make Payments, and schedule Appointments.</p>
+              </div>
+
+              <div style="padding: 4px 0px;"></div>
+
+              <h4 class="job"><i class="fa fa-flag"></i> Live Cost integration - <span class="job-date">Sept 2022 - Mar 2023</span></h4>
+              <div class="job-description">
+                <p>Backend integration to allow our Members to automatically update their Item costs from <a href="https://entsellingsolutions.com/">ESS</a>'s database</p>
+              </div>
+
+              <div style="padding: 4px 0px;"></div>
+
+              <h4 class="job"><i class="fa fa-flag"></i> Proposal Pro integration - <span class="job-date">Oct 2021 - Jul 2022</span></h4>
+              <div class="job-description">
+                <p><a href="https://entsellingsolutions.com/hvac-proposal-software/">Proposal Pro</a> is a third-party multiple-option Quote building web application. Created backend integration to sync between systems, and necessary frontend enhancements in FE Web.</p>
+              </div>
+
+              <div style="padding: 4px 0px;"></div>
+
+              <h4 class="job"><i class="fa fa-flag"></i> Docusign integration - <span class="job-date">Nov 2020 - Feb 2021</span></h4>
+              <div class="job-description">
+                <p>Integrated Consumer Portal with <a href="https://www.docusign.com/">Docusign</a> so our Member's Customers can review, accept, and sign a Quote, authorizing our Member to order parts and schedule work.</p>
+              </div>
+
+              <div style="padding: 4px 0px;"></div>
+
+              <h4 class="job"><i class="fa fa-flag"></i> Consumer Portal - <span class="job-date">Jun 2018 - April 2019</span></h4>
+              <div class="job-description">
+                <p>Simple web portal for our Member's Customers to be able to view an Invoice and make a payment, using <a href="https://clearent.com/">Clearent</a> payment provider.</p>
+              </div>
+
+              <div style="padding: 4px 0px;"></div>
+            
+              <h4 class="job"><i class="fa fa-flag"></i> Layout Templates - <span class="job-date">Aug 2017 - Jun 2018</span></h4>
+              <div class="job-description">
+                <p>Created a Layout Template designer which allows users to add/remove, drag/drop, and resize pre-defined data elements in a template. Then a given template can be populated for a given Invoice, rendered into a PDF, and sent to the end Customer attached to an email.</p>
               </div>
             </app-section-item>
 
-            <app-section-item [TimelineClassType]="'timeline-work'" [AddExtraVerticalSpace]="true" [Subtitle]="'Dupstudio'">
-              <h4 class="job"><i class="fa fa-flag"></i> Designer - <span class="job-date">Jan 2010 - Apr 2012</span></h4>
+            <!-- SIS -->
+            <app-section-item [TimelineClassType]="'timeline-work'" [AddExtraVerticalSpace]="true" [Subtitle]="'Surgical Information Systems'">
+              <h4 class="job"><i class="fa fa-flag"></i> Project Mercury - <span class="job-date">Fall 2014 — Summer 2017</span></h4>
               <div class="job-description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Rewriting legacy application for the Cloud using TypeScript, Angular 1.4, and SASS on the frontend, .NET Web API webservices, and a SQL Server database. Transitioned to Angular 4 in Spring 2017.</p>
+              </div>
+
+              <div style="padding: 4px 0px;"></div>
+
+              <h4 class="job"><i class="fa fa-flag"></i> SIS Com - <span class="job-date">Spring 2009 — Fall 2014</span></h4>
+              <div class="job-description">
+                <p>Maintaining and enhancing an existing patient tracking application. Flash displays launched and configured through a web portal and pulling information from Java based Rules Engine and Message Router and an Oracle database.</p>
               </div>
             </app-section-item>
 
-            <app-section-item [TimelineClassType]="'timeline-work'" [AddExtraVerticalSpace]="true" [Subtitle]="'Dotrex Co.'">
-              <h4 class="job"><i class="fa fa-flag"></i> Designer - <span class="job-date">Jan 2010 - Apr 2012</span></h4>
-              <div class="job-description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              </div>
-            </app-section-item>
           </section>
-          <!-- ==>> /SECTION: WORK EXPERIENCE <<==== --> 
+          <!-- ==>> /SECTION: Experience <<==== --> 
 
 
 
@@ -261,6 +262,23 @@
           <!-- ==>> /SECTION: SKILLS -->
 
 
+
+          <!-- ====>> SECTION: EDUCATION <<====-->
+          <section class="timeline education" id="education">
+
+            <app-timeline-vertical-margin></app-timeline-vertical-margin>
+
+            <app-section-title [Title]="'Education'"></app-section-title>
+            
+            <app-section-item [TimelineClassType]="'timeline-education'" [AddExtraVerticalSpace]="true" [Subtitle]="'Southern Polytechnic State University'">
+              <h4 class="graduation-time"><i class="fa fa-university"></i> B.S. Computer Science - <span class="graduation-date">Graduation Fall 2008</span></h4>
+              <div class="graduation-description">
+                <p></p>
+              </div>
+            </app-section-item>  
+  
+          </section>
+          <!-- ==>> /SECTION: EDUCATION <<==== -->  
 
 
           <!-- ====>> SECTION: INTERESTS <<====-->

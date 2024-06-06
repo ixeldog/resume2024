@@ -561,7 +561,8 @@ p {
   background-size: 400px 500px;
 }
 .timeline-work:before {
-  background: url('../img/progress-work3.png') no-repeat center center;
+  /* very tall Experience section requires repeat-y for background */
+  background: url('../img/progress-work3.png') repeat-y center center;
   background-size: 400px 500px;
 }
 .timeline-mail:before {
@@ -610,7 +611,8 @@ p {
 }
 @media (min-width:992px) {
   .line-content-education {
-    min-height: 150px;
+    /* My education is very short vertically */
+    /* min-height: 150px; */
   }
 }
 .graduation-time,

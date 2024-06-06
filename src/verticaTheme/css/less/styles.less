@@ -583,7 +583,8 @@ p {
 
 .timeline-work {
 	&:before {
-		background: url('../img/progress-work3.png') no-repeat center center;
+		/* very tall Experience section requires repeat-y for background */
+		background: url('../img/progress-work3.png') repeat-y center center;
 		background-size: 400px 500px;
 	}	
 }
@@ -641,7 +642,8 @@ p {
 .line-content-education {	
 	padding-bottom: 10px;
 	@media @laptop {
-		min-height: 150px;
+		// My education is very short vertically
+		// min-height: 150px;
 		//padding-bottom: 40px;
 	}
 }
