@@ -1,7 +1,14 @@
+<style>
+    .progress {
+        background-color: inherit;
+        box-shadow: none;
+    }
+</style>
+
 <div class="progress">
     <div class="progress-bar {{ColorClass}}" role="progressbar" [attr.data-percent]="Skill.Percent + '%'" style="width: {{Skill.Percent}}%;">
         <span class="sr-only">{{Skill.Percent}}% Complete</span>
     </div>
     <span class="progress-type">{{Skill.Label}}</span>
-    <span class="progress-completed">{{Skill.Percent}}%</span>
+    <!-- <span class="progress-completed">{{Skill.Percent}}%</span> -->
   </div>
