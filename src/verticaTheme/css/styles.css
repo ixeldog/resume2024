@@ -556,6 +556,10 @@ p {
   background: url('../img/progress-point.png') center center;
   background-size: 400px 500px;
 }
+.timeline-point-end:before {
+  background: url('../img/progress-point-end.png') center center;
+  background-size: 400px 500px;
+}
 .timeline-education:before {
   background: url('../img/progress-education4.png') no-repeat center center;
   background-size: 400px 500px;
