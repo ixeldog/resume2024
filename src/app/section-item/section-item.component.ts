@@ -18,9 +18,13 @@ export class SectionItemComponent {
   @Input()
   Subtitle:String;
 
+  @Input()
+  LinkUrl:string;
+
   constructor() {
     this.TimelineClassType = "";
     this.Subtitle = "";
     this.AddExtraVerticalSpace = false;
+    this.LinkUrl = "";
   }
 }

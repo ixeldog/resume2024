@@ -8,7 +8,12 @@
     <div class="col-md-8 content-wrap bg1">
         <div class="line-content" [ngClass]="{'line-content-education': AddExtraVerticalSpace}">
         <!-- Subtitle -->
-        <h3 class="section-item-title-1">{{Subtitle}}</h3>
+        <h3 class="section-item-title-1">
+            <span>{{Subtitle}}</span>
+            <span *ngIf="LinkUrl != null && LinkUrl.length > 0">
+                &nbsp;<a [href]="LinkUrl" target="_blank"><i class="fa fa-external-link"></i></a>
+            </span>
+        </h3>
         <!-- /Subtitle -->
         <!-- content -->
         <ng-content></ng-content>
