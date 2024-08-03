@@ -172,11 +172,17 @@
 
             <app-section-title [Title]="'Skills'"></app-section-title>
 
-            <div *ngIf="SkillGroups.length > 0">
-              <app-section-item *ngFor="let skillGroup of SkillGroups; index as i" [@inOutAnimation] [TimelineClassType]="'timeline-point'" [Subtitle]="skillGroup.GroupLabel">
-                <app-skill-group [Skills]="skillGroup.Skills"></app-skill-group>
-              </app-section-item>
+            <div style="position: relative;">
+              <div *ngIf="SkillGroups.length > 0">
+                <app-section-item *ngFor="let skillGroup of SkillGroups; index as i" [@inOutAnimation] [TimelineClassType]="'timeline-point'" [Subtitle]="skillGroup.GroupLabel">
+                  <app-skill-group [Skills]="skillGroup.Skills"></app-skill-group>
+                </app-section-item>
+              </div>
+              <div *ngIf="SkillGroups == null || SkillGroups.length === 0">
+                <ngx-spinner type="ball-clip-rotate-pulse" [fullScreen]="false" size="medium"></ngx-spinner>
+              </div>
             </div>
+
 
           </section>
           <!-- ==>> /SECTION: SKILLS -->

@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router'; 
 import { trigger, state, style, animate, transition } from '@angular/animations';
+
+import { NgxSpinnerModule, NgxSpinnerService } from "ngx-spinner";
 
 import { SectionItemComponent } from './section-item/section-item.component';
 import { SectionTitleComponent } from './section-title/section-title.component';
@@ -20,7 +22,9 @@ import $ from 'jquery';
     SectionItemComponent,
     SectionTitleComponent,
     TimelineVerticalMarginComponent,
-    SkillGroupComponent],
+    SkillGroupComponent,
+    NgxSpinnerModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 
@@ -57,7 +61,7 @@ export class AppComponent {
   SkillsService:SkillsService;
   SkillGroups:SkillGroup[];
 
-  constructor() {
+  constructor(private spinner: NgxSpinnerService) {
     this.JobTitle = "Full-Stack Developer";
     this.SkillsService = new SkillsService();
     this.SkillGroups = [];
@@ -71,6 +75,8 @@ export class AppComponent {
           this.heightFix();
         }, 0)
       })
+
+    this.spinner.show();
   }
 
   //code copied from main.js. Has to be rerun after data is loaded and Sections are shown
