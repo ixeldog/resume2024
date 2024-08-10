@@ -564,6 +564,10 @@ p {
   background: url('../img/progress-education4.png') no-repeat center center;
   background-size: 400px 500px;
 }
+.timeline-education-end:before {
+  background: url('../img/progress-education4-end.png') no-repeat center center;
+  background-size: 400px 500px;
+}
 .timeline-work:before {
   /* very tall Experience section requires repeat-y for background */
   background: url('../img/progress-work3.png') repeat-y center center;
@@ -651,9 +655,11 @@ p {
   position: absolute;
   left: 0px;
   font-size: 13px;
-  padding: 3px 30px 2px 10px;
   color: #ffffff;
-  background-color: rgba(25, 25, 25, 0.2);
+  /* I think it looks better without the slightly different background color on the text */
+  /* padding: 3px 30px 2px 10px;
+  background-color: rgba(25, 25, 25, 0.2); */
+  padding: 3px 10px 2px 10px;
 }
 .progress > .progress-completed {
   position: absolute;
