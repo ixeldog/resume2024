@@ -71,7 +71,8 @@ export class SkillsService {
       Skills: [
         {'Percent': 50, 'Label':'Webpack'},
         {'Percent': 50, 'Label':'NPM'},
-        {'Percent': 50, 'Label':'ngrok'},
+        {'Percent': 50, 'Label':'jQuery'},
+        {'Percent': 25, 'Label':'ngrok'},
       ]
     },
     {

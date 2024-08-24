@@ -1,5 +1,13 @@
 
 <style>
+  .profile-border img {
+    content: url("assets/ProfessionalHeadshot_Cropped188.png");
+    /* using background-image (instead of :hover content: url("...")) makes it so image loads on page load and there is no flicker */
+    background-image: url("assets/SelfieZoomedIn_188height.png");
+    &:hover {
+      content: url("");
+    }
+  }
 </style>
 
 <main class="main">
@@ -105,7 +113,7 @@
           <div class="profile-pic">
             <div class="profile-border">
               <!-- Put your picture here ( 308px by 308px for retina display)-->
-              <img src="assets/selfie_188height.png" alt="" style="object-fit:none;">
+              <img alt="" style="object-fit:none;">
               <!-- /Put your picture here -->
             </div>          
           </div>
@@ -122,7 +130,7 @@
           <!-- <h2 class="intro-title2">{{JobTitle}}</h2> -->
           <!-- /job -->
           <!-- Description -->
-          <p>I'm a <strong>full-stack web application</strong> developer, based in Atlanta, Georgia, with 15 years of experience. I'm looking for a <strong>fully remote, full-stack, senior level</strong> position.</p>
+          <p>I'm a <strong>full-stack web application</strong> developer based in Atlanta, Georgia, with over 15 years of experience, and am looking for a <strong>fully remote, full-stack, senior level</strong> position.</p>
           <!-- /Description -->
         </div>
         <!-- /Right Collum -->
@@ -149,12 +157,12 @@
             </app-section-item>
 
             <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Background'">
-              <p>The first part of my career I worked for a <a href="https://www.sisfirst.com/" target="_blank" title="Surgical Information Systems">Medical software company</a>. Mostly as part of a very small team, doing full-stack development, and working with Oracle, Java, and HTML/JavaScript/CSS.</p>
-              <p>The last 7 years I've worked for a <a href="https://fieldedge.com/" target="_blank" title="FieldEdge">Field Services software company</a>, doing both front and backend work on the in-office Dispatcher web application, in addition to multiple backend integrations.</p>
+              <p>The first half of my career was spent with a <a href="https://www.sisfirst.com/" target="_blank" title="Surgical Information Systems">Medical software company</a>, and the second half with a <a href="https://fieldedge.com/" target="_blank" title="FieldEdge">Field Services management software company</a>. In both instances I started on very small teams with a variety of responsibilities before eventually moving to larger teams with more formalized duties and practices.</p>
+              <p>The first position and the first couple years at my current company were generally evenly split between front and backend work, but more recently my work has leaned towards backend integrations.</p>
             </app-section-item>
 
             <app-section-item [TimelineClassType]="'timeline-point'" [Subtitle]="'Technologies'">
-              <p>I'm currently most familiar with SQL Server, C#, JavaScript, and CSS, but I have various levels of experience with many other languages and technologies.</p>
+              <p>I'm currently most familiar with SQL Server, C#, Vue 2, and CSS, but I have worked professionally with many other languages and technologies.</p>
             </app-section-item>
 
             <!-- TODO: delete, if not going to use -->
@@ -225,7 +233,7 @@
             <app-section-item [TimelineClassType]="'timeline-work'" [AddExtraVerticalSpace]="true" [Subtitle]="'FieldEdge'" [LinkUrl]="'https://fieldedge.com/'">
               <h4 class="job"><i class="fa fa-flag"></i> FieldEdge Web - <span class="job-date">Aug 2017 - Current</span></h4>
               <div class="job-description">
-                <p>Maintaining and enhancing web application originally written using C#, ASP .NET and Knockout javascript library, but is being migrated to Vue 2.</p>
+                <p>Maintaining and enhancing web application originally written using C#, ASP .NET and Knockout JavaScript library, but is being migrated to Vue 2.</p>
               </div>
 
               <div style="padding: 4px 0px;"></div>
@@ -239,7 +247,7 @@
 
               <h4 class="job"><i class="fa fa-flag"></i> Live Cost integration - <span class="job-date">Sept 2022 - Mar 2023</span></h4>
               <div class="job-description">
-                <p>Backend integration to allow our Members to automatically update their Item costs from <a href="https://entsellingsolutions.com/" target="_blank">ESS</a>'s database.</p>
+                <p>Backend integration to allow our Members to import and then automatically update their Item costs from <a href="https://entsellingsolutions.com/" target="_blank">ESS</a>'s database.</p>
               </div>
 
               <div style="padding: 4px 0px;"></div>
