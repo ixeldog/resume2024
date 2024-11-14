@@ -67,11 +67,12 @@ export class SkillsService {
       ]
     },
     {
-      GroupLabel: "Frontend tools",
+      GroupLabel: "Tools",
       Skills: [
         {'Percent': 50, 'Label':'Webpack'},
         {'Percent': 50, 'Label':'NPM'},
         {'Percent': 50, 'Label':'jQuery'},
+        {'Percent': 25, 'Label':'Docker'},
         {'Percent': 25, 'Label':'ngrok'},
       ]
     },
