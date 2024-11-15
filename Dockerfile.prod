@@ -1,0 +1,5 @@
+# docker build -t ixeldog/resume2024.prod -f Dockerfile.prod .
+# docker run -p 80 ixeldog/resume2024.prod
+# using Docker desktop client to push image to Docker hub
+FROM httpd:2.4
+COPY ./dist/resume2024/browser /usr/local/apache2/htdocs/
