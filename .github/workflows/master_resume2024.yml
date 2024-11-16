@@ -104,6 +104,6 @@ jobs:
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v1
         with:
-          subject-name: ${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_IMAGE_NAME}}
+          subject-name: 'ixeldog/resume2024.prod'
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
