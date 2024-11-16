@@ -6,7 +6,7 @@ name: Build and deploy Node.js app to Azure Web App - Resume2024
 on:
   push:
     branches:
-      - master
+      - BuildDockerImageAndPushToDockerHub
   workflow_dispatch:
 
 jobs:
