@@ -105,6 +105,6 @@ jobs:
         uses: actions/attest-build-provenance@v1
         with:
           #subject-name: 'ixeldog/resume2024.prod'
-          subject-name: 'index.docker.io/resume2024.prod'
+          subject-name: 'index.docker.io/ixeldog/resume2024.prod'
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
